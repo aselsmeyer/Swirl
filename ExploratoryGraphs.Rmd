@@ -1,0 +1,102 @@
+---
+title: "ExploratoryGraphs"
+author: "aselsmeyer"
+date: "June 30, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+| Please choose a course, or type 0 to exit swirl.
+
+ 1: Data Analysis                             2: ErrFind                                
+ 3: Exploratory Data Analysis                 4: Getting and Cleaning Data              
+ 5: Mathematical Biostatistics Boot Camp      6: Open Intro                             
+ 7: R Programming                             8: R Programming Alt                      
+ 9: Regression Models                        10: Statistical Inference                  
+11: Writing swirl Courses                    12: Take me to the swirl course repository!
+
+
+Selection: 3
+
+| Please choose a lesson, or type 0 to return to course menu.
+
+ 1: Principles of Analytic Graphs   2: Exploratory Graphs              3: Graphics Devices in R        
+ 4: Plotting Systems                5: Base Plotting System            6: Lattice Plotting System      
+ 7: Working with Colors             8: GGPlot2 Part1                   9: GGPlot2 Part2                
+10: GGPlot2 Extras                 11: Hierarchical Clustering        12: K Means Clustering           
+13: Dimension Reduction            14: Clustering Example             15: CaseStudy                    
+
+
+Selection: 2
+  |                                                                                                                 |   0%
+
+| Exploratory_Graphs. (Slides for this and other Data Science courses may be found at github
+| https://github.com/DataScienceSpecialization/courses/. If you care to use them, they must be downloaded as a zip file
+| and viewed locally. This lesson corresponds to 04_ExploratoryAnalysis/exploratoryGraphs.)
+
+...
+
+  |==                                                                                                               |   1%
+
+| In this lesson, we'll discuss why graphics are an important tool for data scientists and the special role that
+| exploratory graphs play in the field.
+
+...
+
+  |===                                                                                                              |   3%
+
+| Which of the following would NOT be a good reason to use graphics in data science?
+
+1: To find patterns in data
+2: To understand data properties
+3: To find a color that best matches the shirt you're wearing
+4: To suggest modeling strategies
+
+Selection: 3
+
+| Great job!
+
+  |=====                                                                                                            |   4%
+
+| So graphics give us some visual form of data, and since our brains are very good at seeing patterns, graphs give us a
+| compact way to present data and find or display any pattern that may be present.
+
+...
+
+  |======                                                                                                           |   5%
+
+| Which of the following cliches captures the essence of graphics?
+
+1: The apple doesn't fall far from the tree
+2: A picture is worth a 1000 words
+3: To err is human, to forgive divine
+4: A rose by any other name smells as sweet
+
+Selection: 2
+
+| Great job!
+
+  |========                                                                                                         |   7%
+
+| Exploratory graphs serve mostly the same functions as graphs. They help us find patterns in data and understand its
+| properties. They suggest modeling strategies and help to debug analyses. We DON'T use exploratory graphs to communicate
+| results.
+
+...
+
+  |=========                                                                                                        |   8%
+
+| Instead, exploratory graphs are the initial step in an investigation, the "quick and dirty" tool used to point the data
+| scientist in a fruitful direction. A scientist might need to make a lot of exploratory graphs in order to develop a
+| personal understanding of the problem being studied. Plot details such as axes, legends, color and size are cleaned up
+| later to convey more information in an aesthetically pleasing way.
+
+| To demonstrate these ideas, we've copied some data for you from the U.S. Environmental Protection Agency (EPA) which
+| sets national ambient air quality standards for outdoor air pollution. These Standards say that for fine particle
+| pollution (PM2.5), the "annual mean, averaged over 3 years" cannot exceed 12 micro grams per cubic meter. We stored the
+| data from the U.S. EPA web site in the data frame pollution. Use the R function head to see the first few entries of
+| pollution.
+
